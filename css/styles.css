@@ -254,7 +254,7 @@ body {
 .texto h2,
 .titulo h2 {
   font-size: 23px;
-  text-align: left;
+  text-align: center;
 }
 .texto,
 .titulo {
@@ -523,6 +523,10 @@ footer a:hover {
   nav a {
     font-size: 11px;
     white-space: nowrap;
+  }
+
+  details{
+    margin: 20px;
   }
 
   .cat {
