@@ -310,8 +310,8 @@ details ul {
 
 .cat {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: auto;
+  height: auto;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
