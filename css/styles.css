@@ -311,13 +311,13 @@ details ul {
 
 .cat {
   position: relative;
-  width: auto;
-  height: auto;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
   display: block;
-  padding: 0;
+  padding: 10px;
 }
 
 .cat::after {
@@ -523,6 +523,11 @@ footer a:hover {
   nav a {
     font-size: 11px;
     white-space: nowrap;
+  }
+
+  .cat {
+  width: auto;
+  height: auto;
   }
 
   footer {
