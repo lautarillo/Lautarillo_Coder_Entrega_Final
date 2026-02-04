@@ -29,7 +29,8 @@ p {
   background-repeat: no-repeat;
 }
 .baner h1 {
-  color: #ceb1d8;
+  padding: 10px;
+  color: #d2b2dd;
 }
 .baner p {
   color: white;
@@ -387,11 +388,9 @@ details ul {
 /*INICIO BODY DEVOLUCIONES*/
 .devoluciones-grid {
   display: grid;
-  gap: 20px;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 10px;
+  h1{
+    width: 100%;
+  }
 }
 
 /*FIN BODY DEVOLUCIONES*/
