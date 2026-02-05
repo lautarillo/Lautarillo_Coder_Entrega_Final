@@ -494,6 +494,9 @@ footer {
   width: 100%;
   padding: 15px 0;
   text-align: center;
+  .footer-links{
+    text-align: start;
+  }
 }
 
 footer a {
@@ -505,7 +508,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 /*FIN FOOTER*/
 
 /*# sourceMappingURL=styles.css.map */
