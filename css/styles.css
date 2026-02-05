@@ -494,17 +494,15 @@ footer {
   width: 100%;
   padding: 15px 0;
   text-align: center;
-  
 }
 
 footer a {
   color: white;
   text-decoration: none;
   font-size: 10px;
+  text-align: start;
 }
-.footer-links{
-    text-align: start;
-  }
+
 footer a:hover {
   text-decoration: underline;
 }
