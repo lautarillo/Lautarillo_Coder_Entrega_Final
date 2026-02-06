@@ -490,9 +490,10 @@ footer {
   position: static;
   background-color: #1b1d1f;
   color: white;
-  gap: 35px;
+  gap: 400px;
   width: 100%;
-  padding: 15px 0;
+  height:fit-content;
+  padding: 10px;
   text-align: center;
 }
 
