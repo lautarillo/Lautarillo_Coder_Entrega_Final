@@ -83,9 +83,18 @@ nav a,
   color: white;
   text-decoration: none;
 }
-
 /*FIN HEADER*/
 
+/*INICIO BODY*/
+body {
+  background: linear-gradient(to right, rgb(91, 91, 160), rgb(146, 224, 146));
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*BODY INDEX*/
 /*aca estan los tres mejores juegos*/
 .mejores {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -141,103 +150,7 @@ nav a,
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  font-family: inherit;
-  gap: 10px;
-  padding-inline: 2em;
-  padding-bottom: 0.4em;
-  background-color: #171717;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.form-heading {
-  text-align: center;
-  margin: 2em;
-  color: #984dbd;
-  font-size: 1.2em;
-  background-color: transparent;
-  align-self: center;
-}
-
-.form-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  border-radius: 10px;
-  padding: 0.6em;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #171717;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-
-.input-field {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: #ccd6f6;
-  padding-inline: 1em;
-}
-
-.sendMessage-btn {
-  cursor: pointer;
-  margin-bottom: 3em;
-  padding: 1em;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #984dbd;
-  font-weight: bold;
-  outline: 1px solid #592075;
-  transition: all ease-in-out 0.6s;
-}
-
-.sendMessage-btn:hover {
-  transition: all ease-in-out 0.6s;
-  background-color: #592075;
-  color: #000;
-  cursor: pointer;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-
-.form-card1 {
-  background-image: linear-gradient(163deg, #592075 0%, #592075 100%);
-  border-radius: 22px;
-  transition: all 0.6s;
-}
-
-.form-card1:hover {
-  box-shadow: 0px 0px 30px 1px #431859 100, 255, 218, 0.3;
-}
-
-.form-card2 {
-  border-radius: 0;
-  transition: all 0.6s;
-}
-
-.form-card2:hover {
-  transform: scale(0.98);
-  border-radius: 20px;
-}
-
-/*INICIO BODY*/
-body {
-  background: linear-gradient(to right, rgb(91, 91, 160), rgb(146, 224, 146));
-  height: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+/*FIN BODY INDEX*/
 
 /*BODY PRODUCTOS*/
 .texto,
@@ -371,8 +284,8 @@ details ul {
   opacity: 1;
   transform: scale(1);
 }
-
 /*FIN BODY PRODUCTOS*/
+
 /*INICIO BODY CONTACTOS*/
 .contacto-flex {
   display: flex;
@@ -384,7 +297,93 @@ details ul {
   border-radius: 10px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #984dbd;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 50%;
+  color: #ccd6f6;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #984dbd;
+  font-weight: bold;
+  outline: 1px solid #592075;
+  transition: all ease-in-out 0.6s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.6s;
+  background-color: #592075;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  width: 45%;
+  margin: 40px auto; 
+  background-image: linear-gradient(163deg, #592075 0%, #592075 100%);
+  border-radius: 22px;
+  transition: all 0.6s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px #431859 100, 255, 218, 0.3;
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.6s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
 /*FIN BODY CONTACTOS*/
+
 /*INICIO BODY DEVOLUCIONES*/
 .devoluciones-grid {
   display: grid;
@@ -395,14 +394,28 @@ details ul {
 
 /*FIN BODY DEVOLUCIONES*/
 /*FIN BODY*/
-.wrapper {
-  display: inline-flex;
-  list-style: none;
-  height: 120px;
-  width: 100%;
-  padding-top: 40px;
-  font-family: "Poppins", sans-serif;
-  justify-content: center;
+
+/*INICIO FOOTER*/
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: #1b1d1f;
+  color: white;
+  padding: 30px 80px;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px;
+}
+
+footer a {
+  display: grid;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: start;
+}
+footer a:hover{
+  text-decoration:underline;
 }
 
 .wrapper .icon {
@@ -481,44 +494,18 @@ details ul {
   color: #fff;
 }
 
-/*INICIO FOOTER*/
-footer {
-  display: flex;
-  margin-top: auto;
-  background-color: #1b1d1f;
-  color: white;
-  padding: 30px 80px; /* Más espacio interno */
-  justify-content: space-between; /* 🔑 Separa los 3 bloques principales */
-  align-items: center; 
-  gap: 20px;
-}
-
-footer a {
-  display: grid;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  text-align: start;
-}
-footer a:hover{
-  text-decoration:underline;
-}
-
-/* 🔑 Aseguramos que cada bloque ocupe el mismo espacio para un centro perfecto */
 .footer-info, 
 .footer-social, 
 .footer-links {
   flex: 1; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido de cada bloque */
+  align-items: center;
 }
 
-/* Alineamos el texto a la izquierda y derecha para los extremos */
 .footer-info { align-items: flex-start; }
 .footer-links { align-items: flex-end; }
 
-/* --- CORRECCIÓN DEL WRAPPER (PELOTITAS) --- */
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -527,18 +514,16 @@ footer a:hover{
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
-  width: auto; /* 🔑 Cambiado de 100% a auto para que no empuje */
+  width: auto;
 }
 
-/* Ajuste del logo en el footer para que no se mueva */
 .footer-info .logo {
-  position: static; /* Quita el absolute del logo principal */
+  position: static;
   margin: 0 0 10px 0;
 }
 
-/* Limpieza de listas en el footer */
 footer ul {
-  list-style: none;
+  list-style:square;
   padding: 0;
   margin: 0;
 }
@@ -570,6 +555,10 @@ footer ul {
   width: auto;
   height: auto;
   }
+  
+   .form-card1 {
+    width: 90%;
+  }
 
   footer {
     display: flex;
@@ -590,5 +579,10 @@ footer ul {
 
   .wrapper {
     justify-content: center;
+  }
+  .form-card1 {
+    background-image: linear-gradient(163deg, #592075 0%, #592075 100%);
+    border-radius: 22px;
+    transition: all 0.6s;
   }
 }
