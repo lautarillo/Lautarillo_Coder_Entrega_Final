@@ -577,6 +577,19 @@ footer ul {
     margin: 6px 0;
   }
 
+  .wrapper .facebook{
+  background: #1877f2;
+  color: #fff;
+  }
+  .wrapper .instagram{
+    background: #e4405f;
+    color: #fff;
+  }
+  .wrapper .twitter{
+    background: #1da1f2;
+  color: #fff;
+  }
+
   .wrapper {
     justify-content: center;
   }
