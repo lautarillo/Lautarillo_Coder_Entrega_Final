@@ -498,6 +498,7 @@ footer {
 }
 
 footer a {
+  display: grid;
   color: white;
   text-decoration: none;
   font-size: 10px;
