@@ -481,31 +481,16 @@ details ul {
   color: #fff;
 }
 
-.wrapper {
-  display: flex;              /* 🔑 NO inline-flex */
-  justify-content: center;    /* centra horizontalmente */
-  align-items: center;
-  width: 100%;
-  list-style: none;
-  padding: 40px 0;
-  margin: 0 auto;             /* 🔑 fuerza centrado */
-  max-width: 400px;
-}
-
 /*INICIO FOOTER*/
 footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: auto;
-  position: static;
   background-color: #1b1d1f;
   color: white;
-  gap: 400px;
-  width: 100%;
-  height:fit-content;
-  padding: 10px;
-  
+  padding: 30px 80px; /* Más espacio interno */
+  justify-content: space-between; /* 🔑 Separa los 3 bloques principales */
+  align-items: center; 
+  gap: 20px;
 }
 
 footer a {
@@ -515,12 +500,48 @@ footer a {
   font-size: 12px;
   text-align: start;
 }
-
-footer a:hover {
-  text-decoration: underline;
+footer a:hover{
+  text-decoration:underline;
 }
 
+/* 🔑 Aseguramos que cada bloque ocupe el mismo espacio para un centro perfecto */
+.footer-info, 
+.footer-social, 
+.footer-links {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido de cada bloque */
+}
 
+/* Alineamos el texto a la izquierda y derecha para los extremos */
+.footer-info { align-items: flex-start; }
+.footer-links { align-items: flex-end; }
+
+/* --- CORRECCIÓN DEL WRAPPER (PELOTITAS) --- */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* 🔑 Cambiado de 100% a auto para que no empuje */
+}
+
+/* Ajuste del logo en el footer para que no se mueva */
+.footer-info .logo {
+  position: static; /* Quita el absolute del logo principal */
+  margin: 0 0 10px 0;
+}
+
+/* Limpieza de listas en el footer */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 /*FIN FOOTER*/
 
