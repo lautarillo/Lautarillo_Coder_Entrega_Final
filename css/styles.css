@@ -501,8 +501,8 @@ footer a {
   display: grid;
   color: white;
   text-decoration: none;
-  font-size: 10px;
-  text-align: start;
+  font-size: 15px;
+  text-align: left;
 }
 
 footer a:hover {
